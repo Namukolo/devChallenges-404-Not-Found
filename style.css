@@ -1,0 +1,125 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color:#FFFFFF;
+    font-family: "Space Mono", monospace;
+}
+
+.container{
+    padding:40px 0 0 77px;
+}
+
+header > p {
+    font-family: "Inconsolata", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+#hero-image > img {
+    width: 33.70rem;
+    height: 25.89rem;
+}
+
+#content > h1{
+    font-size: 4rem;
+    line-height: 5.92rem ;
+    height: 11.87rem;
+    width: 36.81rem;
+    margin-bottom: 2.25rem;
+} 
+
+#content > p{
+    font-size: 1.5rem;
+    line-height: 2.22rem;
+    letter-spacing: -3.5%;
+    color: #4F4F4F;
+    width: 25.81rem;
+}
+.call-to-action{
+    display: block;
+    font-size: 14px;
+    color: #FFFFFF;
+    text-decoration: none;
+    width: 13.5rem;
+    height: 4.25rem;
+    background-color: #333333;
+    margin-top: 4rem;
+}
+.call-to-action:hover{
+    background-color: #4b4a4a;
+}
+#button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-content-area{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3.12rem;
+    margin-right: 119px; 
+}
+
+#dev-challenge-tag {
+    margin-top: 3.12rem;
+    font-weight: 700;
+    color: #2B254E;
+}
+#dev-challenge-tag > a{
+    text-decoration: none;
+    color: #FF6D5B;
+}
+
+
+/* MOBILE STYLES  */
+
+@media only screen and (max-width: 375px){
+
+    .container{
+        padding: 20px 0 0 40px;
+    }
+
+    header > p{
+        font-size: 1.5rem;
+    }
+
+    #hero-image > img {
+        width: 17.92rem;
+        height: 13.77rem;
+        justify-self: center;
+    }
+
+    #main-content-area{
+        flex-direction: column;
+    }
+
+    #content > h1{
+        font-size: 2.5rem;
+        line-height: 4.44rem;
+        letter-spacing: -3.5%;
+        height: 8.87rem;
+        width: 21.87rem;
+        margin-bottom: 1.87rem;
+    } 
+
+    #content > p{
+        font-size: 1.12rem;
+        line-height: 1.66rem;
+        height: 5.06rem;
+        width: 20.5rem;
+        margin-bottom: 2.25rem;
+    } 
+
+    .call-to-action{
+        width: 13.5rem;
+        height: 4.25rem;
+        font-size: 14px;
+        margin-top: 4.12rem;
+    }
+
+}
